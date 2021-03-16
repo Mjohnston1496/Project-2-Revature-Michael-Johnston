@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EntreeSelection__c</fullName>
+    <externalId>false</externalId>
+    <label>EntreeSelection</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Beef With Broccoli</fullName>
+                <default>false</default>
+                <label>Beef With Broccoli</label>
+            </value>
+            <value>
+                <fullName>Orange Chicken</fullName>
+                <default>false</default>
+                <label>Orange Chicken</label>
+            </value>
+            <value>
+                <fullName>Peking Duck</fullName>
+                <default>false</default>
+                <label>Peking Duck</label>
+            </value>
+            <value>
+                <fullName>Sesame Chicken</fullName>
+                <default>false</default>
+                <label>Sesame Chicken</label>
+            </value>
+            <value>
+                <fullName>Sweet and Sour Chicken</fullName>
+                <default>false</default>
+                <label>Sweet and Sour Chicken</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

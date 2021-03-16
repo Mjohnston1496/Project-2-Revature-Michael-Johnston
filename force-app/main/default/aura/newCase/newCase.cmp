@@ -1,0 +1,23 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="caseController">
+    <aura:attribute name="cases" type="Case[]"/>
+    <aura:attribute name="newCase" type="Case" default="{'sobjectType': 'Case',
+                                                        'Subject': '',
+                                                        'Description': '',
+                                                        'Status': 'New'
+                                                        }"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <lightning:card title="Trouble with your Order?">
+        <div class="slds-p-horizontal_x-small slds-text-heading_small">
+            <p>We are sorry to hear about that. Please Provide us with some more information so we can make it right:</p>
+        </div>
+        <form class="slds-form--stacked">
+            <div class="slds-p-around_x-small">
+                <ui:inputText aura:id="subject" value="{!newCase.Subject}" label="Subject" required="true" class="slds-grid slds-size_7-of-12"/>
+                <ui:inputTextArea aura:id="description" value="{!newCase.Description}" label="Description" required="true" class="slds-grid slds-size_10-of-12"/>
+                <div class="slds-p-around_x-small">
+                    <lightning:button variant="brand" name="SubmitCase" label="Submit" onclick="{!c.handleSubmit}"/>
+                </div>    
+            </div>
+        </form>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <div>
+    <h1>Welcome To Fortune King!</h1>
+    </div>
+    <div>
+    <p>Providing Excellent Chinese Cuisine since 1946.</p>
+    </div>
+</aura:component>

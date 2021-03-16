@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AppSelection__c</fullName>
+    <externalId>false</externalId>
+    <label>AppSelection</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Crab WonTons</fullName>
+                <default>false</default>
+                <label>Crab WonTons</label>
+            </value>
+            <value>
+                <fullName>Pork Dumplings</fullName>
+                <default>false</default>
+                <label>Pork Dumplings</label>
+            </value>
+            <value>
+                <fullName>Pork Egg Rolls</fullName>
+                <default>false</default>
+                <label>Pork Egg Rolls</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

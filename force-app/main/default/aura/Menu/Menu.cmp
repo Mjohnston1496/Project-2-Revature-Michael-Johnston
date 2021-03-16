@@ -1,0 +1,143 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="MenuItemController">
+    <aura:attribute name="AppMenuItem" type="Menu_Item__c"/>
+    <lightning:card title="Menu">
+    	<lightning:tabset>
+        	<lightning:tab label="Appetizers" id="appetizers">
+            	<lightning:accordion aura:id="appsAccordian" onsectiontoggle="{!handleAppSectionToggle}">
+                	<lightning:accordionsection name="Pork Dumplings" label="Pork Dumplings">
+                    	<p>
+							Pan-fried or steamed, light chili sauce drizzle
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="7.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Pork Egg Rolls" label="Pork Egg Rolls">
+                    	<p>
+							Hand-rolled with julienned veggies, sweet and sour mustard sauce
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="6.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Crab WonTons" label="Crab WonTons">
+                    	<p>
+							Creamy crab filling, bell pepper, green onion, spicy plum sauce
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="7.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                </lightning:accordion>
+            </lightning:tab>
+            <lightning:tab label="Soups and Salads" id="soupsSalads">
+                <lightning:accordion aura:id="ssAccordian" onsectiontoggle="{!handleAppSectionToggle}">
+                	<lightning:accordionsection name="Asian Caesar Salad" label="Asian Caesar Salad">
+                    	<p>
+							Romaine, parmesan, toasted sesame seeds, wonton croutons
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="11.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Egg Drop Soup" label="Egg Drop Soup">
+                    	<p>
+							Velvety broth, julienned carrots, green onion
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="12.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Hot and Sour Soup" label="Hot and Sour Soup">
+                    	<p>
+							Rich and tangy broth, silken tofu, chicken, bamboo shoots, egg
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="12.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="WonTon Soup" label="WonTon Soup">
+                    	<p>
+							Savory broth, house-made pork wontons, shrimp, chicken
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="13.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                </lightning:accordion>
+            </lightning:tab>
+            <lightning:tab label="Main Entrees" id="mainEntrees">
+            	<lightning:accordion aura:id="appsAccordian" onsectiontoggle="{!handleAppSectionToggle}">
+                	<lightning:accordionsection name="Beef with Broccoli" label="Beef with Broccoli">
+                    	<p>
+							Flank steak, ginger-garlic aromatics, green onion, steamed broccoli
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="13.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Orange Chicken" label="Orange Chicken">
+                    	<p>
+							Lightly battered, sweet citrus chili sauce, fresh orange slices
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="13.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Peking Duck" label="Peking Duck">
+                    	<p>
+							Crisped duck, julienned vegetables, roti flatbread, chili paste, hoisin
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="15.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Sesame Chicken" label="Sesame Chicken">
+                    	<p>
+							Sesame sauce, broccoli, bell peppers, onion
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="13.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="Sweet and Sour Chicken" label="Sweet and Sour Chicken">
+                    	<p>
+							Sweet and sour sauce, pineapple, onion, bell peppers, ginger
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="13.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                </lightning:accordion>
+            </lightning:tab>
+            <lightning:tab label="Desserts" id="desserts">
+            	<lightning:accordion aura:id="ssAccordian" onsectiontoggle="{!handleAppSectionToggle}">
+                    <lightning:accordionsection name="Banana Spring Rolls" label="Banana Spring Rolls">
+                    	<p>
+							Crispy bites of banana, caramel-vanilla drizzle, coconut-pineapple ice cream
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="8.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="New York-Style Cheese Cakes" label="New York-Style Cheese Cake">
+                    	<p>
+							Creamy cheesecake, graham cracker crust, fresh berries
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="8.50" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                    <lightning:accordionsection name="The Great Wall of Chocolate" label="The Great Wall of Chocolate">
+                    	<p>
+							Six layers of chocolate cake, chocolate frosting, semi-sweet chocolate chips
+                        </p>
+                        <p style="text-align:right">
+                            <lightning:formattedNumber value="11.00" style="currency" currencyCode="USD"/>
+                        </p>
+                    </lightning:accordionsection>
+                </lightning:accordion>
+            </lightning:tab>
+        </lightning:tabset>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,13 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="caseController">
+    <aura:attribute name="cases" type="list"/>
+    <aura:attribute name="columns" type="list"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    
+    <lightning:card title="My Cases">
+        <div>
+        <lightning:datatable keyField="id"
+                             data="{!v.cases}"
+                             columns="{!v.columns}"/>
+        </div>
+    </lightning:card>
+</aura:component>

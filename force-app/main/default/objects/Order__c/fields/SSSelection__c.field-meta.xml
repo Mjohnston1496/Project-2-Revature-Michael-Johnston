@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSSelection__c</fullName>
+    <externalId>false</externalId>
+    <label>SSSelection</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Asian Caesar Salad</fullName>
+                <default>false</default>
+                <label>Asian Caesar Salad</label>
+            </value>
+            <value>
+                <fullName>Hot and Sour Soup</fullName>
+                <default>false</default>
+                <label>Hot and Sour Soup</label>
+            </value>
+            <value>
+                <fullName>WonTon Soup</fullName>
+                <default>false</default>
+                <label>WonTon Soup</label>
+            </value>
+            <value>
+                <fullName>Egg Drop Soup</fullName>
+                <default>false</default>
+                <label>Egg Drop Soup</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
